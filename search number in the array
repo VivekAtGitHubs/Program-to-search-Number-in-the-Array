@@ -1,0 +1,27 @@
+#include <stdio.h>
+int main() 
+{
+ int a[5],i,flag=0,key,pos;
+ for(i=0;i<5;i++)
+ {
+     printf("\n enter number");
+     scanf("%d",&a[i]);
+ }
+ printf("enter number to search");
+ scanf("%d",&key);
+ for(i=0;i<10;i++)
+{
+    if (a[i]==key)
+    {
+    pos=i+1;
+    flag=1;
+    break;
+    }
+}
+if(flag=1)
+    printf("\nnumber found at%d",pos);
+    else
+    printf("\nnumber not found");
+
+    return 0;
+}
